@@ -1,0 +1,4 @@
+confuse==1.6.0
+azureml-defaults==1.37.0
+confuse==1.6.0
+orbit-ml==1.1.0
