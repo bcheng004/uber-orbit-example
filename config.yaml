@@ -1,4 +1,7 @@
-dlt_uber_provided_example:
+uber_provided_example:
+  azureml:
+    dataset: 
+      name: "iclaims"
   utils:
     TIME_COL: "week"
     RESPONSE_COL: "claims"
@@ -20,3 +23,17 @@ dlt_uber_provided_example:
     estimator: "stan-mcmc"
     seasonality: 52
     point_method: "mean"
+  lgt_map:
+    regressor_col: "sp500"
+    estimator: "stan-map"
+    seasonality: 52
+  lgt_full:
+    regressor_col: "sp500"
+    estimator: "stan-mcmc"
+    seasonality: 52
+    point_method: ~
+  lgt_agg:
+    regressor_col: "sp500"
+    estimator: "pyro-svi"
+    seasonality: 52
+    point_method: ~

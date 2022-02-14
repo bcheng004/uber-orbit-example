@@ -2,3 +2,4 @@
 .amlignore
 .ipynb_aml_checkpoints
 *.amltmp
+config.json
