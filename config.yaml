@@ -1,0 +1,22 @@
+dlt_uber_provided_example:
+  utils:
+    TIME_COL: "week"
+    RESPONSE_COL: "claims"
+    test_ind: 52
+    seed: 8888
+    global_trend_option_list:
+    - linear
+    - loglinear
+    - logistic
+    - flat
+  dlt_map:
+    estimator: "stan-map"
+    seasonality: 52
+  dlt_full:
+    estimator: "stan-mcmc"
+    seasonality: 52
+    point_method: ~
+  dlt_agg:
+    estimator: "stan-mcmc"
+    seasonality: 52
+    point_method: "mean"

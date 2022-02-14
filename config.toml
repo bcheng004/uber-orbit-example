@@ -1,9 +1,0 @@
-[dlt_uber_provided_example]
-  [dlt_uber_provided_example.utils]
-    TIME_COL = "week"
-    RESPONSE_COL = "claims"
-    test_ind = 52
-    seed = 8888
-  [dlt_uber_provided_example.dlt_map]
-    estimator = "stan-map"
-    seasonality = 52
